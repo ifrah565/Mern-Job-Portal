@@ -10,7 +10,9 @@ const Creatjob = () => {
 
     const onSubmit = (data) => {
        // console.log(data);
-       fetch("http://localhost:3000/all-jobs")
+       fetch("http://localhost:3000/post job").then(res => res.json()).then((result)=> {
+        console.log(result)
+       })
     };
 
 
